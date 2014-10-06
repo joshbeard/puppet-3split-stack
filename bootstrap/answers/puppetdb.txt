@@ -1,0 +1,32 @@
+###############################################################################
+## puppetdb.txt
+## For installing the puppetdb and postgresql components
+## Load common answers from 'common.txt'
+###############################################################################
+source $( dirname "${BASH_SOURCE[0]}" )/common.txt
+
+q_all_in_one_install=n
+q_backup_and_purge_old_configuration=n
+q_backup_and_purge_old_database_directory=n
+q_database_install=y
+q_database_port=5432
+q_database_root_user=pe-postgres
+q_fail_on_unsuccessful_master_lookup=y
+q_install=y
+q_pe_database=y
+q_puppet_cloud_install=n
+q_puppet_enterpriseconsole_auth_database_name=console_auth
+q_puppet_enterpriseconsole_auth_database_user=console_auth
+q_puppet_enterpriseconsole_database_name=console
+q_puppet_enterpriseconsole_database_user=console
+q_puppet_enterpriseconsole_install=n
+q_puppetagent_certname=${PUPPETDB_HOST}.${DOMAIN}
+q_puppetagent_install=y
+q_puppetdb_database_name=pe-puppetdb
+q_puppetdb_database_user=pe-puppetdb
+q_puppetdb_install=y
+q_puppetdb_plaintext_port=8080
+q_puppetdb_port=8081
+q_puppetmaster_install=n
+q_run_updtvpkg=n
+q_vendor_packages_install=y

@@ -10,29 +10,29 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   instances = {
 
-    :puppetca01 => {
+    :puppetmaster1 => {
       :ip   => '192.168.29.10',
       :mem  => '1024',
       :cpus => '2',
     },
-    :puppetdb01 => {
+    :puppetdb1 => {
       :ip   => '192.168.29.11',
       :mem  => '1024',
       :cpus => '2',
     },
-    :puppetconsole01 => {
+    :puppetconsole1 => {
       :ip   => '192.168.29.12',
       :mem  => '512',
       :cpus => '2',
     },
-    :puppetmaster01 => {
+    :puppetmaster2 => {
       :ip   => '192.168.29.20',
       :mem  => '512',
       :cpus => '1',
     },
 
     ## An agent
-    :puppetagent01 => {
+    :puppetagent1 => {
       :ip   => '192.168.29.30',
       :mem  => '512',
       :cpus => '1',

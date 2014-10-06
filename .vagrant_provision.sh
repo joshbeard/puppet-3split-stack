@@ -22,15 +22,16 @@ cat > /etc/hosts <<EOH
 127.0.0.1 localhost localhost.localdomain localhost4 localhost4.localdomain
 ::1 localhost localhost.localdomain localhost6 localhost6.localdomain
 ###############################################################################
-192.168.29.10 puppetca01.vagrant.vm puppetca01
-192.168.29.11 puppetdb01.vagrant.vm puppetdb01
-192.168.29.12 puppetconsole01.vagrant.vm puppetconsole01
+192.168.29.10 puppetmaster1.vagrant.vm puppetmaster1
+192.168.29.11 puppetdb1.vagrant.vm puppetdb1
+192.168.29.12 puppetconsole1.vagrant.vm puppetconsole1
 
 ## Additional compile master
-192.168.29.20 puppetmaster01.vagrant.vm puppetmaster01
+192.168.29.20 puppetmaster2.vagrant.vm puppetmaster2
 
 ###############################################################################
 ### CNAMES
+192.168.29.10 puppetca.vagrant.vm puppetca
 192.168.29.10 puppetmaster.vagrant.vm puppetmaster
 192.168.29.11 puppetdb.vagrant.vm puppetdb
 192.168.29.12 puppetconsole.vagrant.vm puppetconsole

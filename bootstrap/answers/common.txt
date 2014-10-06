@@ -1,0 +1,56 @@
+###############################################################################
+## This file contains common answers for the PE servers
+###############################################################################
+
+###############################################################################
+## The domain for these systems
+###############################################################################
+DOMAIN="vagrant.vm"
+
+###############################################################################
+## The specific short hostnames for the base PE stack
+###############################################################################
+PRIMARY_MASTER="puppetmaster1"
+PUPPETDB_HOST="puppetdb1"
+PUPPETCONSOLE_HOST="puppetconsole1"
+
+###############################################################################
+## The following are the non-specific CNAMEs for the PE components
+###############################################################################
+GENERIC_PUPPETCA="puppetca"
+GENERIC_PUPPETMASTER="puppetmaster"
+GENERIC_PUPPETDB="puppetdb"
+GENERIC_PUPPETCONSOLE="puppetconsole"
+
+###############################################################################
+## Passwords for the PostgreSQL databases
+###############################################################################
+q_database_root_password=hunter2
+q_puppet_enterpriseconsole_auth_database_password=hunter2
+q_puppet_enterpriseconsole_database_password=hunter2
+q_puppetdb_database_password=hunter2
+
+###############################################################################
+## PuppetDB and PostgreSQL hosts
+###############################################################################
+
+## FQDN for reaching the PostgreSQL server
+q_database_host=${PUPPETDB_HOST}.${DOMAIN}
+
+## FQDN for reaching PuppetDB
+q_puppetdb_hostname=${GENERIC_PUPPETDB}.${DOMAIN}
+
+###############################################################################
+## Console
+###############################################################################
+q_puppet_enterpriseconsole_master_hostname=${GENERIC_PUPPETMASTER}.${DOMAIN}
+q_puppetmaster_enterpriseconsole_hostname=${GENERIC_PUPPETCONSOLE}.${DOMAIN}
+q_puppetagent_server=puppetmaster01.vagrant.vm
+q_puppet_enterpriseconsole_auth_user_email=admin@example.com
+q_puppet_enterpriseconsole_auth_password=password
+
+###############################################################################
+## Master-related names
+###############################################################################
+q_puppetmaster_certname=${PRIMARY_MASTER}.${DOMAIN}
+q_puppetagent_server=${PRIMARY_MASTER}.${DOMAIN}

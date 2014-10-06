@@ -1,0 +1,6 @@
+bootstrap/pe/puppet-enterprise-*
+modules
+*.swp
+*.swo
+*.log
+.vagrant
