@@ -31,8 +31,8 @@ puppet-enterprise-installer -A ../../answers/ca.txt
 
 Edit `/etc/puppetlabs/puppet/autosign.conf` and add the following entries:
 
-* The full certificate name of the PuppetDB server (e.g. puppetdb01.vagrant.vm)
-* The full certificate name of the Console server (e.g. puppetconsole01.vagrant.vm)
+* The full certificate name of the PuppetDB server (e.g. puppetdb1.vagrant.vm)
+* The full certificate name of the Console server (e.g. puppetconsole1.vagrant.vm)
 
 ### 2. Install the PuppetDB/PostgreSQL server
 
